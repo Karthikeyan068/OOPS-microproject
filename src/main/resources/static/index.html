@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutoff Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator">
+    <h1>Cutoff Calculator</h1>
+    <form id="cutoffForm">
+        <label for="maths">Mathematics (out of 100):</label>
+        <input type="number" id="maths" min="0" max="100" required>
+
+        <label for="physics">Physics (out of 100):</label>
+        <input type="number" id="physics" min="0" max="100" required>
+
+        <label for="chemistry">Chemistry (out of 100):</label>
+        <input type="number" id="chemistry" min="0" max="100" required>
+
+        <button type="button" onclick="calculateCutoff()">Calculate Cutoff</button>
+    </form>
+    <div id="result" class="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
